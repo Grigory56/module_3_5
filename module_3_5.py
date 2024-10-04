@@ -1,4 +1,6 @@
 def get_multiplied_digits ( number ):
+    while number % 10 == 0:
+        number = number // 10
     str_number = str(number)
     first =int(str_number[0])
     str_l = str_number[1:]
